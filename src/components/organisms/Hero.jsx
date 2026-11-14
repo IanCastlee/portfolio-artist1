@@ -71,7 +71,7 @@ export function Hero() {
       <div className="absolute top-1/3 -right-32 w-[520px] h-[520px] bg-accent-purple/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* 2. TOP ARCHITECTURAL METADATA STRAND */}
-      <div className="w-full max-w-[1600px] mx-auto px-5 lg:px-[70px] relative z-20 flex items-center justify-between text-[11px] font-accent tracking-widest uppercase text-ink-muted select-none">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 flex items-center justify-between text-[10px] sm:text-[11px] font-accent tracking-widest uppercase text-ink-muted select-none mb-2 sm:mb-0">
         <motion.div
           initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export function Hero() {
       </div>
 
       {/* 3. MAIN HERO SPATIAL COMPOSITION */}
-      <div className="w-full max-w-[1600px] mx-auto px-5 lg:px-[70px] relative z-10 my-auto flex-1 flex items-center">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-10 my-auto flex-1 flex items-center">
         {/* Same-Row CSS Grid: Left typography and Right artwork overlap seamlessly */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-12 items-center relative">
 
@@ -115,12 +115,12 @@ export function Hero() {
               >
                 {/* Line 1: E-YHAN - Kinetic entrance from left with titanium gradient */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { x: -80, opacity: 0, filter: 'blur(8px)' }}
+                  initial={prefersReduced ? { opacity: 0 } : { x: -40, opacity: 0, filter: 'blur(8px)' }}
                   animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
                   transition={{ duration: 0.75, ease: easings.kineticImpact }}
-                  className="relative inline-flex items-baseline"
+                  className="relative inline-flex items-baseline max-w-full"
                 >
-                  <span className="block text-5xl sm:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f0f0f8] to-white/70 tracking-tight">
+                  <span className="block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f0f0f8] to-white/70 tracking-tight">
                     {ownerInfo.name}
                   </span>
                   <motion.span
@@ -135,29 +135,29 @@ export function Hero() {
 
                 {/* Line 2: VISUAL - Saturated kinetic vermilion with dynamic skew */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { x: 80, skewX: -16, opacity: 0, filter: 'blur(8px)' }}
+                  initial={prefersReduced ? { opacity: 0 } : { x: 40, skewX: -12, opacity: 0, filter: 'blur(8px)' }}
                   animate={{ x: 0, skewX: -5, opacity: 1, filter: 'blur(0px)' }}
                   transition={{ duration: 0.75, delay: 0.12, ease: easings.kineticImpact }}
-                  className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center"
+                  className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center max-w-full"
                 >
-                  <span className="inline-block text-5xl sm:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-accent tracking-tighter drop-shadow-[0_0_40px_rgba(255,77,46,0.45)]">
+                  <span className="inline-block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-accent tracking-tighter drop-shadow-[0_0_40px_rgba(255,77,46,0.45)]">
                     VISUAL
                   </span>
                   <motion.span
                     animate={{ scale: [1, 1.3, 1], rotate: [0, 90, 180, 270, 360] }}
                     transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-                    className="inline-block w-3 h-3 sm:w-4 sm:h-4 bg-accent-electric ml-3 mb-1"
+                    className="inline-block w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 bg-accent-electric ml-2 sm:ml-3 mb-1 shrink-0"
                   />
                 </motion.div>
 
                 {/* Line 3: KINETICS - Brutalist wireframe outline overlapping the artwork */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { y: 50, opacity: 0, letterSpacing: '0.08em' }}
-                  animate={{ y: 0, opacity: 1, letterSpacing: '0.02em' }}
+                  initial={prefersReduced ? { opacity: 0 } : { y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.25, ease: easings.kineticImpact }}
-                  className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center"
+                  className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center max-w-full"
                 >
-                  <span className="block text-5xl sm:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] slam-text-stroke hover:text-white/20 transition-colors duration-300">
+                  <span className="block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] tracking-tight slam-text-stroke hover:text-white/20 transition-colors duration-300">
                     KINETICS
                   </span>
                   <motion.div
@@ -271,7 +271,7 @@ export function Hero() {
         initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-        className="w-full max-w-[1600px] mx-auto px-5 lg:px-[70px] relative z-20 select-none"
+        className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 select-none"
       >
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 pt-3 border-t border-canvas-border/80">
           {artistStats.map((stat, idx) => (

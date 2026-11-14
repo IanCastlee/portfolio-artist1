@@ -1,6 +1,6 @@
 {
-  "_client-BFY43hR2.js": {
-    "file": "assets/client-BFY43hR2.js",
+  "_client-DgRcop7V.js": {
+    "file": "assets/client-DgRcop7V.js",
     "name": "client",
     "isDynamicEntry": true,
     "imports": [
@@ -8,15 +8,15 @@
     ]
   },
   "index.html": {
-    "file": "assets/app-uGcu9EYI.js",
+    "file": "assets/app-ClVbxc-a.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
-      "_client-BFY43hR2.js"
+      "_client-DgRcop7V.js"
     ],
     "css": [
-      "assets/app-B8uvYpYv.css"
+      "assets/app-DfJ0EP43.css"
     ],
     "assets": [
       "assets/syne-greek-700-normal-RbvlO3f8.woff2",
