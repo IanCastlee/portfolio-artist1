@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>E-yhan | Contemporary Visual Artist & Kinetic Muralist</title>
+    <!-- Inline anti-FOUC and JS detection -->
+    <script>
+      (function() {
+        document.documentElement.classList.add('dark');
+        // js-ready will be added once React mounts to ensure crawlers & no-JS users see all elements unhidden
+      })();
+    </script>
+    <noscript>
+      <style>
+        .loader-overlay { display: none !important; }
+        .motion-initial-hidden { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+      </style>
+    </noscript>
+  </head>
+  <body class="bg-canvas text-ink-primary font-sans antialiased selection:bg-accent selection:text-white overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

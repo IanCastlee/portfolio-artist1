@@ -1,0 +1,6 @@
+# robots.txt generated for E-yhan Studio
+User-agent: *
+Allow: /
+Disallow: /404
+
+Sitemap: https://eyhanart.ph/sitemap.xml

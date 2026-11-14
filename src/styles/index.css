@@ -1,0 +1,76 @@
+@import "@fontsource/syne/700.css";
+@import "@fontsource/syne/800.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0a0a0d;
+    color: #fbfbff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Syne", sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  .font-accent {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a38;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d2e;
+}
+
+/* Kinetic slam animation keyframe helpers */
+.slam-text-stroke {
+  -webkit-text-stroke: 1.5px rgba(251, 251, 255, 0.25);
+  color: transparent;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slam-text-stroke:hover {
+  -webkit-text-stroke: 1.5px #ff4d2e;
+  color: #ff4d2e;
+}
+
+/* Noise overlay utility */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Clip path slant effects for kinetic collision feels */
+.clip-slam-left {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+.clip-slam-right {
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+}

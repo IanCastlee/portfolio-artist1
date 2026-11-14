@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bioOcean" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="60%" stop-color="#050C17"/>
+      <stop offset="100%" stop-color="#030508"/>
+    </radialGradient>
+    <linearGradient id="neonLimeSurge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00522B"/>
+      <stop offset="40%" stop-color="#00E676"/>
+      <stop offset="80%" stop-color="#D4FF3F"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="uvPurpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A148C"/>
+      <stop offset="50%" stop-color="#7B1FA2"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1600" fill="url(#bioOcean)"/>
+
+  <!-- Swirling Oceanic Current Ribbons -->
+  <path d="M-200,600 Q300,200 700,700 T1400,600 L1400,1000 Q900,1200 500,900 T-200,1100 Z" fill="url(#uvPurpleGlow)" opacity="0.6"/>
+  <path d="M-100,850 Q400,600 800,1000 T1300,750 L1300,900 Q800,1150 400,800 T-100,1000 Z" fill="url(#neonLimeSurge)" opacity="0.85"/>
+
+  <!-- Bioluminescent Spores -->
+  <circle cx="580" cy="740" r="180" fill="#D4FF3F" opacity="0.15" filter="blur(50px)"/>
+  <circle cx="750" cy="880" r="220" fill="#00E676" opacity="0.18" filter="blur(60px)"/>
+
+  <!-- Kinetic Fracture Lines -->
+  <polygon points="200,400 950,550 850,680 150,500" fill="#D4FF3F" opacity="0.9"/>
+  <polygon points="350,950 1100,1100 1000,1200 300,1050" fill="#00E5FF" opacity="0.8"/>
+
+  <!-- Marine Current Streaks -->
+  <line x1="100" y1="200" x2="1100" y2="1400" stroke="#D4FF3F" stroke-width="2" stroke-dasharray="12 8" opacity="0.4"/>
+  <line x1="200" y1="150" x2="1150" y2="1300" stroke="#00E5FF" stroke-width="3" stroke-dasharray="24 16" opacity="0.5"/>
+
+  <text x="80" y="1520" fill="#FBFBFF" opacity="0.3" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="700" letter-spacing="6">
+    E-YHAN // SORSOGON BIOLUMINESCENCE NO. 7
+  </text>
+  <text x="80" y="1560" fill="#D4FF3F" opacity="0.6" font-family="'Space Grotesk', sans-serif" font-size="16" letter-spacing="4">
+    LUMINESCENT PIGMENTS &amp; RESIN ON BIRCH
+  </text>
+</svg>

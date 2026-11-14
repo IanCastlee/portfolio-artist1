@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1067" width="100%" height="100%">
+  <defs>
+    <radialGradient id="portraitBg" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#21212B"/>
+      <stop offset="60%" stop-color="#121217"/>
+      <stop offset="100%" stop-color="#08080A"/>
+    </radialGradient>
+    <linearGradient id="warmRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D2E" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1067" fill="url(#portraitBg)"/>
+
+  <!-- Studio Backlight -->
+  <circle cx="320" cy="380" r="260" fill="#FF4D2E" opacity="0.12" filter="blur(60px)"/>
+
+  <!-- Artist Silhouette & Stylized Graphic Atelier Portrait -->
+  <g fill="#181820" stroke="#2A2A38" stroke-width="2">
+    <!-- Body / Shoulders -->
+    <path d="M150,1067 Q180,680 400,680 Q620,680 650,1067 Z" fill="#14141B"/>
+    <!-- Head / Neck -->
+    <rect x="360" y="520" width="80" height="180" fill="#1C1C26"/>
+    <ellipse cx="400" cy="420" rx="130" ry="170" fill="#242432"/>
+    <!-- Kinetic Glitch / Face Mask Visor Art -->
+    <polygon points="260,370 540,390 530,470 270,450" fill="#FF4D2E" opacity="0.9"/>
+    <line x1="240" y1="410" x2="560" y2="430" stroke="#FBFBFF" stroke-width="4"/>
+  </g>
+
+  <!-- Studio Paint Splatter / Kinetic Mineral Marks -->
+  <circle cx="210" cy="740" r="14" fill="#D4FF3F" opacity="0.8"/>
+  <circle cx="230" cy="770" r="8" fill="#FF4D2E"/>
+  <circle cx="580" cy="720" r="18" fill="#FF4D2E" opacity="0.85"/>
+  <circle cx="610" cy="750" r="7" fill="#D4FF3F"/>
+
+  <!-- Signature Atelier Marking -->
+  <text x="60" y="1000" fill="#FBFBFF" opacity="0.4" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" letter-spacing="4">
+    E-YHAN // ATELIER PIOT, SORSOGON
+  </text>
+</svg>

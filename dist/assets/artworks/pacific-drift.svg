@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="concreteWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14141A"/>
+      <stop offset="50%" stop-color="#1E1E26"/>
+      <stop offset="100%" stop-color="#0E0E12"/>
+    </linearGradient>
+    <linearGradient id="typhoonSlam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B1FA2"/>
+      <stop offset="50%" stop-color="#FF4D2E"/>
+      <stop offset="100%" stop-color="#D4FF3F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1600" fill="url(#concreteWall)"/>
+
+  <!-- Monumental Angular Facade Shapes -->
+  <polygon points="0,100 1200,600 1200,1000 0,500" fill="#252533" opacity="0.8"/>
+  <polygon points="1200,300 0,900 0,1400 1200,800" fill="url(#typhoonSlam)" opacity="0.85"/>
+
+  <!-- High-Velocity Slanted Arrows & Slices -->
+  <polygon points="100,300 800,700 700,780 50,360" fill="#FBFBFF" opacity="0.9"/>
+  <polygon points="400,650 1150,1100 1080,1200 350,740" fill="#FF4D2E"/>
+  <polygon points="50,950 850,1400 780,1480 0,1020" fill="#D4FF3F" opacity="0.95"/>
+
+  <!-- Architectural Grid Coordinates -->
+  <g stroke="#FBFBFF" stroke-width="1" opacity="0.15">
+    <line x1="150" y1="0" x2="150" y2="1600"/>
+    <line x1="450" y1="0" x2="450" y2="1600"/>
+    <line x1="750" y1="0" x2="750" y2="1600"/>
+    <line x1="1050" y1="0" x2="1050" y2="1600"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="800" x2="1200" y2="800"/>
+    <line x1="0" y1="1200" x2="1200" y2="1200"/>
+  </g>
+
+  <text x="80" y="1520" fill="#FBFBFF" opacity="0.3" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="700" letter-spacing="6">
+    E-YHAN // PACIFIC DRIFT: MONOLITH IV (MURAL)
+  </text>
+  <text x="80" y="1560" fill="#FF4D2E" opacity="0.6" font-family="'Space Grotesk', sans-serif" font-size="16" letter-spacing="4">
+    EXTERIOR WEATHER-SHIELD ACRYLIC ON REINFORCED CONCRETE
+  </text>
+</svg>
