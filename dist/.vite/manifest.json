@@ -1,6 +1,6 @@
 {
-  "_client-TCANCF4o.js": {
-    "file": "assets/client-TCANCF4o.js",
+  "_client-CKIQgrTN.js": {
+    "file": "assets/client-CKIQgrTN.js",
     "name": "client",
     "isDynamicEntry": true,
     "imports": [
@@ -8,12 +8,12 @@
     ]
   },
   "index.html": {
-    "file": "assets/app-CNTbmXfg.js",
+    "file": "assets/app-D2CJnKfc.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
-      "_client-TCANCF4o.js"
+      "_client-CKIQgrTN.js"
     ],
     "css": [
       "assets/app-BvW6lVEK.css"

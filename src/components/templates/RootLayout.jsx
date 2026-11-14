@@ -77,8 +77,8 @@ export function RootLayout() {
         <Outlet />
       </main>
 
-      {/* Floating contact widget */}
-      <FloatingContact />
+      {/* Floating contact widget - Temporarily disabled for testing layout */}
+      {/* <FloatingContact /> */}
 
       {/* Global footer */}
       <Footer />
