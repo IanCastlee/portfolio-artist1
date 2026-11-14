@@ -7,7 +7,7 @@ import { easings } from '../../motion';
 
 export function Testimonials() {
   return (
-    <section className="py-20 sm:py-28 px-5 lg:px-[70px] w-full max-w-[1600px] mx-auto border-b border-canvas-border">
+    <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-[70px] w-full max-w-[1600px] mx-auto border-b border-canvas-border overflow-hidden">
       <SectionHeader
         subheading="PATRONS & CURATORS"
         title="Collector Reflections"

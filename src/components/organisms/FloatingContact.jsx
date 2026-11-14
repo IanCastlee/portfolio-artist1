@@ -59,7 +59,7 @@ export function FloatingContact() {
   if (!isInteractive) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -71,7 +71,7 @@ export function FloatingContact() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.85, y: 20 }}
             transition={{ duration: 0.25 }}
-            className="mb-4 w-[92vw] sm:w-96 bg-canvas border border-canvas-border shadow-2xl overflow-hidden text-ink-primary"
+            className="mb-3 w-[calc(100vw-2rem)] max-w-sm sm:w-96 bg-canvas border border-canvas-border shadow-2xl overflow-hidden text-ink-primary"
           >
             {/* Header */}
             <div className="bg-canvas-subtle p-5 border-b border-canvas-border flex items-center justify-between">

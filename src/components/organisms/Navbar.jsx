@@ -16,13 +16,13 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 ${
+        className={`fixed top-0 left-0 right-0 w-full max-w-full z-50 transition-all duration-300 translate-y-0 ${
           isScrolled
-            ? 'bg-canvas/95 backdrop-blur-md border-b border-canvas-border py-4 shadow-xl'
-            : 'bg-transparent py-5 sm:py-6'
+            ? 'bg-canvas/95 backdrop-blur-md border-b border-canvas-border py-3.5 sm:py-4 shadow-xl'
+            : 'bg-transparent py-4 sm:py-6'
         }`}
       >
-        <div className="w-full max-w-[1600px] mx-auto px-5 lg:px-[70px] flex items-center justify-between">
+        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] flex items-center justify-between">
           {/* Logo / Brand Name */}
           <Link
             to="/"

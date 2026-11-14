@@ -9,7 +9,7 @@ export function KineticShowcase() {
 
   return (
     <section className="relative py-24 sm:py-32 overflow-hidden bg-canvas-subtle border-y border-canvas-border">
-      <div className="w-full max-w-[1600px] mx-auto px-5 lg:px-[70px]">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px]">
         
         {/* Kinetic Collision Container */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

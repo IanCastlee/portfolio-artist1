@@ -4,7 +4,7 @@ import { Heading, Text, Button, Badge } from '../atoms';
 
 export function CTASection() {
   return (
-    <section className="relative py-24 sm:py-32 px-5 lg:px-[70px] overflow-hidden bg-canvas border-t border-canvas-border">
+    <section className="relative py-20 sm:py-32 px-4 sm:px-6 lg:px-[70px] overflow-hidden bg-canvas border-t border-canvas-border">
       {/* Background artwork image with deep cinematic contrast gradient */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img

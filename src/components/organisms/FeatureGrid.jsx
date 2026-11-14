@@ -26,7 +26,7 @@ export function FeatureGrid({
   const displayItems = limit ? filteredArtworks.slice(0, limit) : filteredArtworks;
 
   return (
-    <section className="py-16 sm:py-24 px-5 lg:px-[70px] w-full max-w-[1600px] mx-auto">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-[70px] w-full max-w-[1600px] mx-auto overflow-hidden">
       {showHeader && (
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <SectionHeader

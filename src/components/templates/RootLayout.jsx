@@ -49,7 +49,7 @@ export function RootLayout() {
   }, [location.pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-canvas text-ink-primary selection:bg-accent selection:text-white">
+    <div className="flex flex-col min-h-screen bg-canvas text-ink-primary selection:bg-accent selection:text-white overflow-x-hidden w-full max-w-full relative">
       {/* Accessible skip link */}
       <a
         href="#main-content"
@@ -70,7 +70,7 @@ export function RootLayout() {
       {/* Main page content - Hidden while loader covers, reveals once covered */}
       <main
         id="main-content"
-        className={`flex-1 transition-opacity duration-150 ${
+        className={`flex-1 w-full max-w-full overflow-x-hidden transition-opacity duration-150 ${
           transitionState === 'covering' ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
