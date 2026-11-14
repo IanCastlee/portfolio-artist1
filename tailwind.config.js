@@ -53,6 +53,9 @@ export default {
         'glow-lime': '0 0 30px -5px rgba(212, 255, 63, 0.35)',
         'slam-hard': '0 25px 50px -12px rgba(0, 0, 0, 0.8)',
       },
+      screens: {
+        xs: '480px',
+      },
     },
   },
   plugins: [],

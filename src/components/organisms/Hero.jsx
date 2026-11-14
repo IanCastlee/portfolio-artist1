@@ -71,7 +71,7 @@ export function Hero() {
       <div className="absolute top-1/3 -right-32 w-[520px] h-[520px] bg-accent-purple/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* 2. TOP ARCHITECTURAL METADATA STRAND */}
-      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 flex items-center justify-between text-[10px] sm:text-[11px] font-accent tracking-widest uppercase text-ink-muted select-none mb-2 sm:mb-0">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 flex items-center justify-between text-[10px] sm:text-[11px] font-accent tracking-widest uppercase text-ink-muted select-none mb-3 lg:mb-0">
         <motion.div
           initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -111,16 +111,16 @@ export function Hero() {
               <Heading
                 as="h1"
                 size="giant"
-                className="flex flex-col uppercase tracking-tighter leading-[0.84] font-display font-black drop-shadow-[0_12px_40px_rgba(0,0,0,0.95)]"
+                className="flex flex-col uppercase tracking-tighter leading-[0.88] sm:leading-[0.84] font-display font-black drop-shadow-[0_12px_40px_rgba(0,0,0,0.95)]"
               >
                 {/* Line 1: E-YHAN - Kinetic entrance from left with titanium gradient */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { x: -40, opacity: 0, filter: 'blur(8px)' }}
+                  initial={prefersReduced ? { opacity: 0 } : { x: -20, opacity: 0, filter: 'blur(8px)' }}
                   animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
                   transition={{ duration: 0.75, ease: easings.kineticImpact }}
                   className="relative inline-flex items-baseline max-w-full"
                 >
-                  <span className="block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f0f0f8] to-white/70 tracking-tight">
+                  <span className="block text-[2.2rem] xs:text-[2.6rem] sm:text-5xl md:text-6xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f0f0f8] to-white/70 tracking-tight">
                     {ownerInfo.name}
                   </span>
                   <motion.span
@@ -135,12 +135,12 @@ export function Hero() {
 
                 {/* Line 2: VISUAL - Saturated kinetic vermilion with dynamic skew */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { x: 40, skewX: -12, opacity: 0, filter: 'blur(8px)' }}
+                  initial={prefersReduced ? { opacity: 0 } : { x: 20, skewX: -8, opacity: 0, filter: 'blur(8px)' }}
                   animate={{ x: 0, skewX: -5, opacity: 1, filter: 'blur(0px)' }}
                   transition={{ duration: 0.75, delay: 0.12, ease: easings.kineticImpact }}
                   className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center max-w-full"
                 >
-                  <span className="inline-block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-accent tracking-tighter drop-shadow-[0_0_40px_rgba(255,77,46,0.45)]">
+                  <span className="inline-block text-[2.2rem] xs:text-[2.6rem] sm:text-5xl md:text-6xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] text-accent tracking-tighter drop-shadow-[0_0_40px_rgba(255,77,46,0.45)]">
                     VISUAL
                   </span>
                   <motion.span
@@ -152,12 +152,12 @@ export function Hero() {
 
                 {/* Line 3: KINETICS - Brutalist wireframe outline overlapping the artwork */}
                 <motion.div
-                  initial={prefersReduced ? { opacity: 0 } : { y: 30, opacity: 0 }}
+                  initial={prefersReduced ? { opacity: 0 } : { y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.25, ease: easings.kineticImpact }}
                   className="relative -mt-1 sm:-mt-2 lg:-mt-3 flex items-center max-w-full"
                 >
-                  <span className="block text-[2.5rem] xs:text-[2.85rem] sm:text-6xl md:text-7xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] tracking-tight slam-text-stroke hover:text-white/20 transition-colors duration-300">
+                  <span className="block text-[2.2rem] xs:text-[2.6rem] sm:text-5xl md:text-6xl lg:text-[4.6rem] xl:text-[5.8rem] 2xl:text-[6.8rem] tracking-tight slam-text-stroke hover:text-white/20 transition-colors duration-300">
                     KINETICS
                   </span>
                   <motion.div
@@ -180,8 +180,9 @@ export function Hero() {
               initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.5 }}
+              className="w-full"
             >
-              <Text variant="lead" className="max-w-xl text-xs sm:text-sm text-ink-secondary mb-3 lg:mb-4 leading-relaxed line-clamp-2 sm:line-clamp-none bg-canvas/40 backdrop-blur-[2px] p-1.5 rounded-sm">
+              <Text variant="lead" className="max-w-xl text-xs sm:text-sm text-ink-secondary mb-3 lg:mb-4 leading-relaxed line-clamp-3 sm:line-clamp-none bg-canvas/40 backdrop-blur-[2px] p-1.5 rounded-sm">
                 {ownerInfo.shortBio}
               </Text>
             </motion.div>
@@ -191,12 +192,12 @@ export function Hero() {
               initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45, duration: 0.5 }}
-              className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto"
+              className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2.5 sm:gap-4 w-full sm:w-auto"
             >
-              <Button to="/portfolio" variant="primary" size="md" iconName="ArrowRight">
+              <Button to="/portfolio" variant="primary" size="md" iconName="ArrowRight" className="w-full xs:w-auto justify-center">
                 Explore Selected Works
               </Button>
-              <Button to="/contact" variant="outline" size="md">
+              <Button to="/contact" variant="outline" size="md" className="w-full xs:w-auto justify-center">
                 Studio Commissions
               </Button>
             </motion.div>
@@ -204,8 +205,8 @@ export function Hero() {
 
           {/* RIGHT PANEL: Maximized Masterwork Canvas (Locked to lg:row-start-1, fills the right area with z-10) */}
           <motion.div
-            initial={prefersReduced ? { opacity: 0 } : { opacity: 0, scale: 0.92, x: 50 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
+            initial={prefersReduced ? { opacity: 0 } : { opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.85, ease: easings.kineticImpact, delay: 0.15 }}
             className="lg:col-start-5 xl:col-start-5 lg:col-end-13 lg:row-start-1 relative z-10 flex justify-end w-full mt-6 lg:mt-0"
           >
@@ -213,16 +214,16 @@ export function Hero() {
             <div className="relative group w-full lg:max-w-full">
               
               {/* Soft Ambient Backlight */}
-              <div className="absolute -inset-3 bg-gradient-to-tr from-accent/30 via-accent-purple/20 to-transparent rounded-lg blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute inset-0 sm:-inset-3 bg-gradient-to-tr from-accent/30 via-accent-purple/20 to-transparent rounded-lg blur-2xl sm:blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-              {/* Gallery Corner Framing Brackets */}
-              <div className="absolute -top-2 -left-2 w-5 h-5 border-t-2 border-l-2 border-accent-electric z-30 pointer-events-none" />
-              <div className="absolute -top-2 -right-2 w-5 h-5 border-t-2 border-r-2 border-accent-electric z-30 pointer-events-none" />
-              <div className="absolute -bottom-2 -left-2 w-5 h-5 border-b-2 border-l-2 border-accent-electric z-30 pointer-events-none" />
-              <div className="absolute -bottom-2 -right-2 w-5 h-5 border-b-2 border-r-2 border-accent-electric z-30 pointer-events-none" />
+              {/* Gallery Corner Framing Brackets - Safely positioned so they never overflow mobile viewport */}
+              <div className="absolute top-0 left-0 sm:-top-2 sm:-left-2 w-4 sm:w-5 h-4 sm:h-5 border-t-2 border-l-2 border-accent-electric z-30 pointer-events-none" />
+              <div className="absolute top-0 right-0 sm:-top-2 sm:-right-2 w-4 sm:w-5 h-4 sm:h-5 border-t-2 border-r-2 border-accent-electric z-30 pointer-events-none" />
+              <div className="absolute bottom-0 left-0 sm:-bottom-2 sm:-left-2 w-4 sm:w-5 h-4 sm:h-5 border-b-2 border-l-2 border-accent-electric z-30 pointer-events-none" />
+              <div className="absolute bottom-0 right-0 sm:-bottom-2 sm:-right-2 w-4 sm:w-5 h-4 sm:h-5 border-b-2 border-r-2 border-accent-electric z-30 pointer-events-none" />
 
-              {/* Maximized Image Canvas Container (Fills the right section within 100vh) */}
-              <div className="relative w-full h-[360px] sm:h-[460px] lg:h-[58vh] xl:h-[64vh] 2xl:h-[68vh] max-h-[68vh] overflow-hidden bg-canvas-surface shadow-[0_30px_70px_rgba(0,0,0,0.95)]">
+              {/* Maximized Image Canvas Container (Fills the right section, clean height on mobile) */}
+              <div className="relative w-full h-[260px] sm:h-[400px] lg:h-[58vh] xl:h-[64vh] 2xl:h-[68vh] max-h-[68vh] overflow-hidden bg-canvas-surface shadow-[0_30px_70px_rgba(0,0,0,0.95)]">
                 <img
                   src={featuredArt.image}
                   alt={`Hero Masterwork: ${featuredArt.title} by ${ownerInfo.name}`}
@@ -242,20 +243,20 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-canvas/80 via-canvas/30 to-transparent opacity-90 hidden lg:block" />
 
                 {/* Minimalist Curatorial Plaque */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex flex-col gap-1 z-20 bg-canvas/85 backdrop-blur-md p-3 sm:p-4 border border-white/10 max-w-xl">
+                <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4 flex flex-col gap-1 z-20 bg-canvas/85 backdrop-blur-md p-2.5 sm:p-4 border border-white/10 max-w-xl">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] sm:text-[11px] font-accent text-accent-electric font-semibold tracking-wider uppercase flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-accent-electric animate-pulse" />
+                    <span className="text-[9px] sm:text-[11px] font-accent text-accent-electric font-semibold tracking-wider uppercase flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-electric animate-pulse" />
                       Latest Masterwork
                     </span>
-                    <span className="text-xs sm:text-sm font-accent text-ink-primary font-bold">
+                    <span className="text-[10px] sm:text-sm font-accent text-ink-primary font-bold">
                       {featuredArt.year}
                     </span>
                   </div>
-                  <h2 className="text-base sm:text-lg lg:text-xl font-display font-bold text-ink-primary truncate tracking-tight">
+                  <h2 className="text-sm sm:text-lg lg:text-xl font-display font-bold text-ink-primary truncate tracking-tight">
                     {featuredArt.title}
                   </h2>
-                  <p className="text-xs sm:text-sm font-accent text-ink-muted truncate">
+                  <p className="text-[10px] sm:text-xs font-accent text-ink-muted truncate">
                     {featuredArt.dimensions} • {featuredArt.medium}
                   </p>
                 </div>
@@ -271,20 +272,20 @@ export function Hero() {
         initial={prefersReduced ? { opacity: 0 } : { opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-        className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 select-none"
+        className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-[70px] relative z-20 select-none mt-4 lg:mt-0"
       >
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 pt-3 border-t border-canvas-border/80">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6 pt-3 border-t border-canvas-border/80">
           {artistStats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col border-l border-white/10 pl-3">
-              <div className="flex items-baseline gap-2">
+            <div key={idx} className="flex flex-col border-l border-white/10 pl-2.5 sm:pl-3">
+              <div className="flex items-baseline gap-1.5 sm:gap-2">
                 <span className="text-[9px] font-accent text-accent/80 font-mono">
                   {`0${idx + 1} //`}
                 </span>
-                <span className="font-accent text-lg sm:text-xl lg:text-2xl font-black text-ink-primary leading-tight">
+                <span className="font-accent text-base sm:text-xl lg:text-2xl font-black text-ink-primary leading-tight">
                   <StatCounter value={stat.value} duration={2.0} />
                 </span>
               </div>
-              <span className="text-[10px] sm:text-xs font-accent uppercase tracking-wider text-ink-muted truncate mt-0.5">
+              <span className="text-[10px] sm:text-xs font-accent uppercase tracking-wider text-ink-muted leading-tight mt-0.5">
                 {stat.label}
               </span>
             </div>
